@@ -1,1 +1,211 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ruda Regular'), local('Ruda-Regular'), url(https://fonts.gstatic.com/s/ruda/v11/k3kfo8YQJOpFqngdbQ.ttf) format('truetype');
+}
+body {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1;
+  font-size: 2rem;
+  padding: 0 3%;
+  background-color: darkolivegreen;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  max-width: 100%;
+}
+img {
+  object-fit: cover;
+  width: 300px;
+  height: 337px;
+}
+header {
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkgrey;
+}
+.mid-container {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px dashed grey;
+}
+.mid-container #About {
+  width: 45%;
+}
+#About {
+  width: 45%;
+}
+.bottom-class {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  background-color: khaki;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .bottom-class .bottom-class {
+    flex-direction: column;
+  }
+}
+h1 {
+  padding-bottom: 4%;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .bottom-class {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
