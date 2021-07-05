@@ -29,8 +29,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda&display=swap');
+@main-font:'Roboto Slab', serif;
+@heading-font:'Ruda', sans-serif;
+
 body {
+	font-family: @main-font;
 	line-height: 1;
+	font-size: 2rem;
+	padding:0 3%;
+	background-color: darkolivegreen;
+	
 }
 ol, ul {
 	list-style: none;
@@ -47,13 +56,84 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; 
+	max-width: 100%;
 }
 
-html, body {
-    height: 100%;
+img{
+	object-fit: cover;
+
+  width: 300px;
+  height: 337px;
+
 }
+
+header{
+	height: 12vh;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+.top-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: darkgrey;
+}
+
+.mid-container{
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-evenly;
+	border-bottom: 2px dashed grey;
+	#About{
+		width: 45%;
+	}
+}
+#About{
+	width: 45%;
+}
+
+.bottom-class{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	background-color: khaki;
+	align-items: center;
+	@media(max-width: 500px){
+		.bottom-class{
+			flex-direction: column;
+		}
+	}
+	
+}
+h1{
+	font-family: @main-font;
+	padding-bottom: 4%;
+	font-size: 4rem;
+}
+h2{
+	font-size: 3rem;
+}
+
+@media(max-width: 500px){
+	.bottom-class{
+		flex-direction: column;
+	}
+}
+
+@media(max-width: 500px){
+	.footer{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+
+
 
